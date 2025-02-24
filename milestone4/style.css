@@ -117,6 +117,7 @@ body {
 }
 
 .hero-image img {
+    background-image: url('Images/hero-image.jpg');
     max-width: 600px;
     height: auto;
     display: block;
