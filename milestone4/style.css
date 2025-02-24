@@ -2,10 +2,8 @@ body {
     margin: 0;
 }
 
-.anek-odia-<uniquifier> {
+.anek-odia {
     font-family: "Anek Odia", serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: normal;
     font-variation-settings: "wdth" 100;
   }
@@ -207,14 +205,17 @@ body {
 }
 
 .portfolio-item {
-    flex: 1;
+    flex: 0 0 auto;
     max-width: 294px;
+    max-height: 250px;
 }
 
 .portfolio-item img {
     width: 100%;
     height: auto;
+    max-width: 100%;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.07);
+    object-fit: scale-down;
 }
 
 .footer {
