@@ -172,7 +172,7 @@ th {
     text-align: left;
 }
 
-tr:nth-of-type(even) {
+tr:nth-of-type(odd) {
     background-color: #F3F3F3;
 }
 
