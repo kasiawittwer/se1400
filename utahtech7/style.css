@@ -159,7 +159,7 @@ table {
     margin: 0 auto;
 }
 
-th, td {
+td {
     border: 1px solid #424242;
     padding: 5px;
     text-align: center;
@@ -167,6 +167,9 @@ th, td {
 
 th {
     background-color: #F3F3F3;
+    border: 1px solid #424242;
+    padding: 5px;
+    text-align: center;
 }
 
 .text {
