@@ -154,14 +154,14 @@ header a {
 
 table {
     width: 100%;
-    border: 1px solid #424242;
     border-collapse: collapse;
+    border: 1px solid #424242;
     margin: 0 auto;
 }
 
-td, th {
-    padding: 5px;
+th, td {
     border: 1px solid #424242;
+    padding: 5px;
     text-align: center;
 }
 
@@ -169,7 +169,7 @@ td, th {
     text-align: left;
 }
 
-table tr:nth-of-type(odd) {
+tr:nth-of-type(odd) {
     background-color: #F3F3F3;
 }
 
