@@ -1,0 +1,448 @@
+body {
+    margin: 0;
+}
+
+.anek-odia {
+    font-family: "Anek Odia", serif;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+
+  .kaisei-tokumin-regular {
+    font-family: "Kaisei Tokumin", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.grid-container {
+    display: grid;
+    grid-auto-rows: minmax(0px, auto);
+    grid-template-columns: minmax(110px, 1fr) repeat(6, minmax(0, 175px)) minmax(110px, 1fr);
+    grid-template-rows: 120px 400px 80px 400px 80px 400px 120px;
+    padding: 0;
+    gap: 0;
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.header {
+    grid-row: 1;
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 110px;
+    background-color: rgba(244, 239, 230, 1);
+    border-bottom: 1px solid rgba(56, 56, 56, 1);
+}
+
+.header h1 a {
+    font-family: 'Kaisei Tokumin', serif;
+    text-decoration: none;
+    color: rgba(56, 56, 56, 1);
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.nav {
+    grid-column: 2 / 8;
+    grid-row: 1;
+    background-color: rgba(244, 239, 230, 1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    font-family:'Anek Odia', sans-serif;
+    text-decoration: none;
+    color: rgba(56, 56, 56, 1);
+    font-size: 24px;
+}
+
+.banner {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(244, 239, 230, 1);
+}
+
+.hero-content {
+    max-width: 600px;
+    flex: 1;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+.hero-content h1 {
+    font-family: 'Kaisei Tokumin', serif;
+    text-decoration: none;
+    color: rgba(56, 56, 56, 1);
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.hero-content p {
+    font-family:'Anek Odia', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    font-family:'Anek Odia', sans-serif;
+    padding: 15px 40px 10px;
+    border: 1px solid rgba(56, 56, 56, 1);
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero-image {
+    flex: 0 0 auto; 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    width: auto;
+    margin-left: auto;
+}
+
+.hero-image img {
+    background-image: url('Images/hero-image.jpg');
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+}
+
+.sub-banner {
+    grid-column: 1 / -1;
+    grid-row: 3 / 7;
+    background-color: rgba(254, 252, 246, 1);
+}
+
+.content-1 {
+    grid-column: 2 / 8;
+    grid-row: 4;
+    background-color: rgba(56, 56, 56, 1);
+    height: 400px;
+}
+
+.intro-section {
+    grid-column: 2 / 8;
+    grid-row: 4;
+    background-color: rgba(56, 56, 56, 1);
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.intro-content h2 {
+    font-family: 'Kaisei Tokumin', serif;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: left;
+    padding-right: 300px;
+}
+
+.intro-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    text-align: left;
+}
+
+.work-experience, .skills {
+    flex: 1;
+}
+
+.work-experience h3, .skills h3 {
+    font-family: 'Anek Odia', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.work-experience p, .skills p {
+    font-family: 'Anek Odia', sans-serif;
+    font-size: 20px;
+}
+
+.content-2 {
+    grid-column: 2 / 8;
+    grid-row: 6;
+    height: 400px;
+}
+
+.portfolio-section {
+    grid-column: 2 / 8;
+    grid-row: 6;
+    background-color: rgba(254, 252, 246, 1);
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    font-family: 'Kaisei Tokumin', serif;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 48px;
+    color: rgba(56, 56, 56, 1);
+    margin-bottom: 90px;
+}
+
+.portfolio-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.portfolio-item {
+    flex: 0 0 auto;
+    max-width: 294px;
+    max-height: 250px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.07);
+    object-fit: scale-down;
+}
+
+
+/* Add these media queries at the end of your CSS file */
+
+@media screen and (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: minmax(20px, 1fr) minmax(0, 768px) minmax(20px, 1fr);
+        max-width: 100%;
+    }
+
+    /* Adjust grid column spans for all elements that were using columns 2-8 */
+    .nav,
+    .intro-section,
+    .portfolio-section,
+    .content-1,
+    .content-2 {
+        grid-column: 2;
+    }
+
+    .hero-content {
+        padding: 0;
+        flex: 0 1 40%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+        margin-bottom: 15px;
+        display: none;
+    }
+
+    .hero-content button {
+        padding: 12px 30px 8px;
+        font-size: 14px;
+    }
+
+    .hero-image {
+        flex: 0 1 55%;
+        height: 400px;
+    }
+
+    .hero-image img {
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+    }
+
+    .sub-banner {
+        flex: 0 0 auto;
+    }
+
+    .portfolio-section {
+        grid-column: 2;
+        grid-row: 5;
+        padding: 10px;
+    }
+
+    .portfolio-gallery {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .portfolio-item {
+        flex: 0 1 calc(33.33% - 20px);
+        max-width: calc(33.33% - 20px);
+    }
+
+    .portfolio-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    #sub-banner {
+        flex-direction: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    /* Adjust all elements to span the full width */
+    .header,
+    .nav,
+    .banner,
+    .sub-banner,
+    .intro-section,
+    .portfolio-section,
+    .content-1,
+    .content-2,
+    .footer {
+        grid-column: 1;
+    }
+
+    /* Adjust header padding for mobile */
+    .header {
+        padding: 20px;
+    }
+
+    /* Adjust hero content padding */
+    .hero-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+        /* ... existing styles ... */
+    
+        .portfolio-section {
+            grid-column: 1;
+            padding: 20px;
+        }
+    
+        .portfolio-gallery {
+            flex-direction: column;
+            align-items: center;
+            gap: 60px;
+            padding: 20px 0;
+        }
+    
+        .portfolio-item {
+            width: 100%;
+            max-width: 350px;
+            margin: 0;
+            padding: 20px;
+        }
+    
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+    
+        .portfolio-section h2 {
+            margin-bottom: 40px;
+            font-size: 36px;
+        }
+    }
+
+    .banner {
+        grid-column: 1;
+        grid-row: 2;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .hero-content {
+        padding: 0;
+        order: 2;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-content h1,
+    .hero-content p {
+        display: none;
+    }
+
+    .hero-content button {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .hero-image {
+        order: 1;
+        margin: 0;
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .sub-banner {
+        flex: 0 0 auto;
+    }
+
+    .intro-section {
+        grid-column: 1;
+        padding: 40px 20px;
+        height: auto;
+    }
+
+    .intro-content h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+        text-align: left;
+        padding-right: 0;
+    }
+
+    .intro-details {
+        flex-direction: column;
+        gap: 30px;
+        text-align: left;
+    }
+
+    .work-experience, .skills {
+        width: 100%;
+    }
+
+    .work-experience h3, .skills h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .work-experience p, .skills p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
