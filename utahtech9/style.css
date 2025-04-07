@@ -187,11 +187,13 @@ video {
 
 #shoppingcart {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 300px));
     gap: 1rem;
     padding: 1rem;
     max-width: 100%;
     box-sizing: border-box;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 #shoppingcart img {
