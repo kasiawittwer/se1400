@@ -116,6 +116,9 @@ main {
     grid-column: 2 / -2;
     background: #ffffff;
     padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main img {
@@ -190,7 +193,8 @@ video {
     grid-template-columns: repeat(3, minmax(0, 300px));
     gap: 1rem;
     padding: 1rem;
-    max-width: 100%;
+    width: 100%;
+    max-width: 1000px;
     box-sizing: border-box;
     margin: 0 auto;
     justify-content: center;
