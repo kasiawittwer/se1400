@@ -1,0 +1,522 @@
+body {
+    margin: 0;
+    background-color: rgba(244, 239, 230, 1);
+}
+
+.anek-odia {
+    font-family: "Anek Odia", serif;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+
+  .kaisei-tokumin-regular {
+    font-family: "Kaisei Tokumin", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.grid-container {
+    display: grid;
+    grid-template-columns: minmax(110px, 1fr) repeat(6, minmax(0, 175px)) minmax(110px, 1fr);
+    gap: 0;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 110px;
+    border-bottom: 1px solid rgba(56, 56, 56, 1);
+}
+
+.header h1 a {
+    font-family: 'Kaisei Tokumin', serif;
+    text-decoration: none;
+    color: rgba(56, 56, 56, 1);
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    font-family: 'Anek Odia', sans-serif;
+    text-decoration: none;
+    color: rgba(56, 56, 56, 1);
+    font-size: 24px;
+}
+
+.banner {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 110px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-family: 'Kaisei Tokumin', serif;
+    color: rgba(56, 56, 56, 1);
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-family: 'Anek Odia', sans-serif;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: rgba(56, 56, 56, 1);
+}
+
+.hero-content a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.resume-button {
+    font-family: 'Anek Odia', sans-serif;
+    padding: 15px 40px;
+    border: 1px solid rgba(56, 56, 56, 1);
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgba(56, 56, 56, 1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: rgba(56, 56, 56, 1);
+    color: white;
+}
+
+.hero-image img {
+    max-width: 500px;
+    height: auto;
+}
+
+.intro-section {
+    grid-column: 1 / -1;
+    background-color: rgba(56, 56, 56, 1);
+    color: white;
+    padding: 60px 110px;
+}
+
+.intro-content h2 {
+    font-family: 'Kaisei Tokumin', serif;
+    font-size: 28px;
+    margin-bottom: 40px;
+    font-weight: normal;
+    max-width: 70%;
+}
+
+.intro-details {
+    display: flex;
+    gap: 60px;
+}
+
+.work-experience, .skills {
+    flex: 1;
+}
+
+.intro-details h3 {
+    font-family: 'Anek Odia', sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.intro-details p {
+    font-family: 'Anek Odia', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.portfolio-section {
+    grid-column: 1 / -1;
+    padding: 60px 110px;
+    background-color: rgba(244, 239, 230, 1);
+}
+
+.portfolio-section h2 {
+    font-family: 'Kaisei Tokumin', serif;
+    font-size: 48px;
+    color: rgba(56, 56, 56, 1);
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: normal;
+}
+
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Changed from 3 to 2 columns */
+    gap: 30px;
+    max-width: 800px; /* Added max-width to maintain proportions */
+    margin: 0 auto; /* Center the gallery */
+}
+
+.portfolio-item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.02);
+}
+
+.contact-section {
+    grid-column: 1 / -1;
+    padding: 60px 110px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-section h2 {
+    font-family: 'Kaisei Tokumin', serif;
+    font-size: 48px;
+    color: rgba(56, 56, 56, 1);
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-family: 'Anek Odia', sans-serif;
+    color: rgba(56, 56, 56, 1);
+    font-size: 18px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    border: none;
+    background-color: rgba(237, 231, 221, 1);
+    font-family: 'Anek Odia', sans-serif;
+    font-size: 16px;
+}
+
+.contact-form button {
+    font-family: 'Anek Odia', sans-serif;
+    padding: 15px 40px;
+    border: none;
+    background-color: rgba(56, 56, 56, 1);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+/* Base portfolio header styles */
+.portfolio-header {
+    grid-column: 1 / -1;
+    background-color: #383838;
+    color: white;
+    padding: 40px 110px;
+}
+
+.portfolio-header h2 {
+    font-family: 'Kaisei Tokumin', serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.portfolio-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.portfolio-nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Anek Odia', sans-serif;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.portfolio-grid {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 60px 110px;
+    background-color: rgba(244, 239, 230, 1);
+}
+
+.portfolio-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.portfolio-card h3 {
+    font-family: 'Kaisei Tokumin', serif;
+    font-size: 24px;
+    color: #383838;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.project-link {
+    font-family: 'Anek Odia', sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #383838;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    width: fit-content;
+}
+
+/* Project page specific styles */
+.project-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: rgba(244, 239, 230, 1);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(56, 56, 56, 0.2);
+}
+
+.project-header h1 a {
+    font-family: 'Kaisei Tokumin', serif;
+    text-decoration: none;
+    color: rgba(56, 56, 56, 1);
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.project-content {
+    padding: 40px 0;
+}
+
+.project-content h2 {
+    font-family: 'Kaisei Tokumin', serif;
+    color: rgba(56, 56, 56, 1);
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.project-layout {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.project-description {
+    flex: 1;
+    max-width: 500px;
+}
+
+.project-description p {
+    font-family: 'Anek Odia', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(56, 56, 56, 1);
+}
+
+.project-image {
+    flex: 1;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        padding: 20px 40px;
+    }
+
+    .banner {
+        padding: 40px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin-bottom: 0;
+        margin-top: 40px;
+    }
+
+    .intro-section {
+        padding: 40px;
+    }
+
+    .intro-content h2 {
+        max-width: 100%;
+    }
+
+    .portfolio-section {
+        padding: 40px;
+    }
+
+    .portfolio-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-section {
+        padding: 40px;
+    }
+
+    .portfolio-header {
+        padding: 40px;
+    }
+
+    .portfolio-header h2 {
+        font-size: 42px;
+        margin-bottom: 15px;
+    }
+    
+    .portfolio-nav ul {
+        gap: 20px;
+        overflow-x: auto;
+        padding-bottom: 5px; /* Add space for potential scrollbar */
+    }
+
+    .portfolio-nav a {
+        font-size: 18px;
+    }
+    
+    .portfolio-grid {
+        padding: 40px;
+        gap: 30px;
+    }
+
+    .project-layout {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .project-description {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    .intro-details {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .portfolio-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-section h2 {
+        font-size: 36px;
+    }
+
+    .contact-section {
+        padding: 20px;
+    }
+    
+    .contact-section h2 {
+        font-size: 36px;
+    }
+
+    .portfolio-header h2 {
+        font-size: 36px;
+    }
+    
+    .portfolio-nav ul {
+        gap: 15px;
+    }
+
+    .portfolio-nav a {
+        font-size: 16px;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 40px;
+    }
+    
+    .portfolio-card h3 {
+        font-size: 20px;
+    }
+
+    .project-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .project-content h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .project-layout {
+        gap: 30px;
+    }
+}
